@@ -52,7 +52,7 @@ IPFP-Association-Rule-Mining/
 ├── datasets/  
 │   ├── sample\_dataset\_1.txt  
 │   ├── sample\_dataset\_2.txt  
-│   └── kosarak.txt  
+│     
 │  
 ├── src/  
 │   ├── demo/  
