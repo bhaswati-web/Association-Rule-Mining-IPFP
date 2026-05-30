@@ -10,11 +10,15 @@ from pyspark.ml.fpm import FPGrowth
 
 # CONFIGURATION
 
-MIN_SUPPORT = 0.25 
+# A relatively low support value is employed to retain local candidate patterns and avoid aggressive local pruning before global aggregation.
+MIN_SUPPORT = 0.25
+
+# Minimum confidence threshold used for association rule generation.
 MIN_CONFIDENCE = 0.20
 
 INPUT_FILE = "dataset/sample_dataset_1.txt"
 
+# Number of data partitions used for partition-wise local mining.
 NUM_PARTITIONS = 3
 
 # CREATE SPARK SESSION
